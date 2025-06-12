@@ -17,7 +17,7 @@ import {
   Users,
   Award
 } from 'lucide-react';
-import ContactForm from './components/ContactForm';
+import ContactForm from './components/contactform';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,12 +55,12 @@ function App() {
   };
 
   const skills = [
-    { name: 'React.js', level: 95, icon: <Code className="w-6 h-6" /> },
-    { name: 'TypeScript', level: 90, icon: <Code className="w-6 h-6" /> },
-    { name: 'WordPress', level: 92, icon: <Globe className="w-6 h-6" /> },
-    { name: 'PHP', level: 88, icon: <Database className="w-6 h-6" /> },
-    { name: 'Node.js', level: 85, icon: <Zap className="w-6 h-6" /> },
-    { name: 'Mobile Dev', level: 80, icon: <Smartphone className="w-6 h-6" /> }
+    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" /> },
+    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" /> },
+    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" /> },
+    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" /> },
+    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" /> },
+    { name: 'Mobile Dev', level: 50, icon: <Smartphone className="w-6 h-6" /> }
   ];
 
   const projects = [
@@ -118,7 +118,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                DevPortfolio
+                Dev-Portfolio
               </span>
             </div>
             
@@ -172,28 +172,28 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center">
+      <section id="home" className="pt-16 min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: "url('./public/v1016-b-09.jpg')"}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <div className="mb-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <Code className="w-16 h-16 text-white" />
+            <div className="mb-6">
+              <div>
+                {/* <Code className="w-16 h-16 text-white" /> */}
+                <img src="./public/profile pic.jpeg" className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center"/>
               </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Alex Johnson
+                Von Cedric Fontanilla
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Full-Stack Developer & WordPress Expert
+            <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
+              Full-Stack Developer
             </p>
             
-            <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-              Crafting exceptional digital experiences with modern web technologies. 
-              Specializing in React, WordPress, and mobile development.
+            <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
+              Web Developer specializing in WordPress (Elementor, custom plugins) and React + TypeScript. I help agencies build fast, SEO-friendly, and user-focused websites with clean code and organized delivery.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -206,7 +206,7 @@ function App() {
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200"
+                className="border-2 border-gray-300 text-white px-8 py-4 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200"
               >
                 Get In Touch
               </button>
