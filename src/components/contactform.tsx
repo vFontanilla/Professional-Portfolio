@@ -84,16 +84,21 @@ const ContactForm: React.FC = () => {
 
     try {
       // EmailJS configuration
-      const serviceId = 'service_portfolio'; // You'll need to replace this
-      const templateId = 'template_portfolio'; // You'll need to replace this
-      const publicKey = 'your_public_key'; // You'll need to replace this
+      // const serviceId = 'service_8thrhck'; 
+      // const templateId = 'template_hdh34tm'; 
+      // const publicKey = 'xBbS7IP3dLhofoaAB'; 
+
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID!; 
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID!; 
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY!; 
+      console.log('EmailJS configuration:', serviceId, templateId, publicKey);
 
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         project_type: formData.projectType,
         message: formData.message,
-        to_name: 'Alex Johnson',
+        to_name: 'Von Cedric Fontanilla',
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -121,7 +126,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-sm">
-      {submitStatus === 'success' && (
+      {submitStatus !== 'success' && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
           <CheckCircle className="w-5 h-5 text-green-600" />
           <div>
@@ -136,7 +141,7 @@ const ContactForm: React.FC = () => {
           <AlertCircle className="w-5 h-5 text-red-600" />
           <div>
             <p className="text-red-800 font-medium">Failed to send message</p>
-            <p className="text-red-600 text-sm">Please try again or contact me directly at alex@devportfolio.com</p>
+            <p className="text-red-600 text-sm">Please try again or contact me directly at vonfontanilla22@gmail.com</p>
           </div>
         </div>
       )}
@@ -214,6 +219,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleInputChange}
             rows={4}
+            maxLength={500}
             className={getInputClassName('message')}
             placeholder="Tell me about your project, timeline, and any specific requirements..."
             disabled={isSubmitting}
