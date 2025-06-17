@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
@@ -12,10 +12,7 @@ import {
   ExternalLink,
   ArrowRight,
   CheckCircle,
-  Monitor,
-  Zap,
-  Users,
-  Award
+  Zap
 } from 'lucide-react';
 import ContactForm from './components/contactform';
 
@@ -55,35 +52,42 @@ function App() {
   };
 
   const skills = [
-    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" /> },
-    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" /> },
-    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" /> },
-    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" /> },
-    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" /> },
-    { name: 'Mobile Dev', level: 50, icon: <Smartphone className="w-6 h-6" /> }
+    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React.js+Vite' },
+    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React+Typescript+Vite' },
+    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '2 Years of experience with WordPress + Elementor' },
+    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2 Years of experience with PHP + WordPress' },
+    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '1 Year of experience with Node.js(Express.js + MongoDB)' },
+    { name: 'Mobile Dev', level: 50, icon: <Smartphone className="w-6 h-6" />, description: '1 Year of experience with Android Studio (Java)' }
   ];
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack React e-commerce solution with payment integration and admin dashboard.',
+      title: 'News Home Page',
+      description: 'News home page built with React.js and Vite, showcasing a clean and modern design.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#'
+      tags: ['React', 'TailwindCSS'],
+      link: 'https://news-homepage-eight-ruddy.vercel.app/'
+    },
+    {
+      title: 'Weather Dashboard Tracker',
+      description: 'Weather dashboard tracker built with React.ts and Vite, displaying real-time weather updates.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
+      tags: ['React', 'TailwindCSS', 'API'],
+      link: 'https://weather-dashboard-app-gamma.vercel.app/'
+    },
+    {
+      title: 'Quiz App',
+      description: 'Quiz app built with React.js and tailwindcss, showcasing a quiz with multiple choice questions.',
+      image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600',
+      tags: ['React', 'TailwindCSS'],
+      link: 'https://quiz-game-app-gamma.vercel.app/'
     },
     {
       title: 'WordPress Theme',
-      description: 'Custom responsive WordPress theme for creative agencies with advanced customization.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['WordPress', 'PHP', 'JavaScript', 'CSS'],
-      link: '#'
-    },
-    {
-      title: 'Mobile App',
-      description: 'Cross-platform mobile application built with React Native and Firebase backend.',
+      description: 'Personalized WordPress theme, showcasing a clean and modern design. This is not yet finished. It is still in the process of being developed. It will be finished soon.',
       image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600',
-      tags: ['React Native', 'Firebase', 'Redux', 'API'],
-      link: '#'
+      tags: ['JS', 'PHP', 'Xampp'],
+      link: 'https://github.com/vFontanilla/VonDev_Theming'
     }
   ];
 
@@ -91,22 +95,22 @@ function App() {
     {
       icon: <Code className="w-8 h-8" />,
       title: 'Web Development',
-      description: 'Custom web applications built with modern frameworks like React, Vue, and Angular.'
+      description: 'Custom web applications built with modern frameworks using React+TS and Vite for fast building '
     },
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'WordPress Development',
-      description: 'Custom themes, plugins, and complete WordPress solutions for businesses of all sizes.'
+      description: 'Custom themes, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: 'Mobile Development',
-      description: 'Cross-platform mobile apps using React Native and Flutter for iOS and Android.'
+      description: 'Using Android Studio (Java) for building mobile apps with LocalDB as storage for offline application.'
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: 'Backend Development',
-      description: 'Robust server-side solutions with Node.js, PHP, and database architecture.'
+      description: 'Robust server-side solutions with Node.js, PHP, and database creation schema using MySQL and MSSQL.'
     }
   ];
 
@@ -222,8 +226,8 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               About Me
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Passionate developer with 5+ years of experience creating innovative web solutions
+            <p className="text-xl text-black max-w-3xl mx-auto">
+              Passionate developer with 2+ years of experience creating innovative web solutions
             </p>
           </div>
 
@@ -232,35 +236,46 @@ function App() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Building Digital Excellence
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-black mb-6 leading-relaxed">
                 I'm a full-stack developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and WordPress development, I help businesses establish a strong online presence.
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-black mb-8 leading-relaxed">
                 My approach combines technical excellence with creative problem-solving, ensuring every project delivers both outstanding performance and exceptional user experience.
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">5+ Years Experience</span>
+                  <span className="text-gray-700">2+ Years Experience</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">50+ Projects Completed</span>
+                  <span className="text-gray-700">Dedicated Full-Stack Developer</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">React & WordPress Expert</span>
+                  <span className="text-gray-700">React & WordPress Proficient</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Mobile Development</span>
+                  <span className="text-gray-700">SEO and GA4/GTM Experienced</span>
                 </div>
+              </div>
+
+              <div className='flex justify-center'>
+                <a 
+                href="./public/Von Cedric Fontanilla CV_Resume.pdf"
+                download
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
+                >
+                  Download CV/Resume
+                  <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
             <div className="space-y-6">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <div key={skill.name} className="bg-gray-50 p-6 rounded-2xl">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
@@ -269,13 +284,16 @@ function App() {
                       </div>
                       <span className="font-semibold text-gray-900">{skill.name}</span>
                     </div>
-                    <span className="text-sm font-medium text-gray-600">{skill.level}%</span>
+                    {/* <span className="text-sm font-medium text-gray-600">{skill.level}%</span> */}
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div 
+                  <div className=" ">
+                    {/* <div 
                       className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000"
                       style={{ width: `${skill.level}%` }}
-                    ></div>
+                    ></div> */}
+                    <div>
+                      {skill.description}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -289,9 +307,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Services
+              Services Offered
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-black max-w-3xl mx-auto">
               Comprehensive development solutions tailored to your business needs
             </p>
           </div>
@@ -394,7 +412,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <p className="text-gray-600">alex@devportfolio.com</p>
+                      <a href='vonfontanilla22@gmail.com' className="text-gray-600">vonfontanilla22@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -403,7 +421,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">GitHub</p>
-                      <p className="text-gray-600">github.com/alexjohnson</p>
+                      <a href='https://github.com/vFontanilla' className="text-gray-600">https://github.com/vFontanilla</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -412,7 +430,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">LinkedIn</p>
-                      <p className="text-gray-600">linkedin.com/in/alexjohnson</p>
+                      <a href='https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/' className="text-gray-600">https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/</a>
                     </div>
                   </div>
                 </div>
@@ -429,25 +447,25 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              DevPortfolio
+              Dev-Portfolio
             </div>
             <p className="text-gray-400 mb-6">
               Building the future, one line of code at a time.
             </p>
             <div className="flex justify-center space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="https://github.com/vFontanilla" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="http://localhost:5173/vonfontanilla22@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800">
               <p className="text-gray-400 text-sm">
-                © 2024 Alex Johnson. All rights reserved.
+                © 2025 Von Cedric Fontanilla. All rights reserved.
               </p>
             </div>
           </div>
