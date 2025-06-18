@@ -176,13 +176,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: "url('./public/v1016-b-09.jpg')"}}>
+      <section id="home" className="pt-16 min-h-screen flex items-center bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: "url('/assets/v1016-b-09.jpg')"}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <div className="mb-6">
               <div>
                 {/* <Code className="w-16 h-16 text-white" /> */}
-                <img src="./public/profile pic.jpeg" className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center"/>
+                <img src="/assets/profile pic.jpeg" className="w-32 h-32 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center"/>
               </div>
             </div>
             
@@ -264,7 +264,7 @@ function App() {
 
               <div className='flex justify-center'>
                 <a 
-                href="./public/Von Cedric Fontanilla CV_Resume.pdf"
+                href="/assets/Von Cedric Fontanilla CV_Resume.pdf"
                 download
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
                 >

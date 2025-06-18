@@ -126,7 +126,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="bg-white p-8 rounded-2xl shadow-sm">
-      {submitStatus !== 'success' && (
+      {submitStatus === 'success' && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
           <CheckCircle className="w-5 h-5 text-green-600" />
           <div>
