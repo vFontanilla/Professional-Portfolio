@@ -64,35 +64,35 @@ function App() {
     {
       title: 'News Home Page',
       description: 'News home page built with React.js and Vite, showcasing a clean and modern design.',
-      image: '/public/assets/News Homepage.jpg',
+      image: '/assets/News Homepage.jpg',
       tags: ['React', 'TailwindCSS'],
       link: 'https://news-homepage-eight-ruddy.vercel.app/'
     },
     {
       title: 'Weather Dashboard Tracker',
       description: 'Weather dashboard tracker built with React.ts and Vite, displaying real-time weather updates.',
-      image: '/public/assets/Weather Dashboard.jpg',
+      image: '/assets/Weather Dashboard.jpg',
       tags: ['React', 'TailwindCSS', 'API'],
       link: 'https://weather-dashboard-app-gamma.vercel.app/'
     },
     {
       title: 'Quiz App',
       description: 'Quiz app built with React.js and tailwindcss, showcasing a quiz with multiple choice questions.',
-      image: '/public/assets/Quiz App.jpg',
+      image: '/assets/Quiz App.jpg',
       tags: ['React', 'TailwindCSS'],
       link: 'https://quiz-game-app-gamma.vercel.app/'
     },
     {
       title: 'WordPress Theme',
       description: 'Personalized WordPress theme, showcasing a clean and modern design. This is not yet finished. It is still in the process of being developed. It will be finished soon.',
-      image: '/public/assets/github theme.jpg',
+      image: '/assets/github theme.jpg',
       tags: ['JS', 'PHP', 'Xampp'],
       link: 'https://github.com/vFontanilla/VonDev_Theming'
     },
     {
       title: 'Wedding E-Invitation',
       description: 'Personalized Website invitation with RSVP form with customized RSVP form, showcasing a clean and modern design.',
-      image: '/public/assets/Wedding Inv Image.jpg',
+      image: '/assets/Wedding Inv Image.jpg',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
       link: 'https://v0-modern-wedding-invitation-rho.vercel.app/'
     }
