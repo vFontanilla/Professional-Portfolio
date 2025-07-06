@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
-  Code, 
-  Smartphone, 
+  Code,
   Globe, 
   Database, 
   Mail, 
@@ -56,8 +55,7 @@ function App() {
     { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React+Typescript+Vite' },
     { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '2 Years of experience with WordPress + Elementor' },
     { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2 Years of experience with PHP + WordPress' },
-    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '1 Year of experience with Node.js(Express.js + MongoDB)' },
-    { name: 'Mobile Dev', level: 50, icon: <Smartphone className="w-6 h-6" />, description: '1 Year of experience with Android Studio (Java)' }
+    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '1 Year of experience with Node.js(Express.js + MongoDB)' }
   ];
 
   const projects = [
@@ -95,6 +93,13 @@ function App() {
       image: '/assets/Wedding Inv Image.jpg',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
       link: 'https://v0-modern-wedding-invitation-rho.vercel.app/'
+    },
+    {
+      title: 'Facebook style OG',
+      description: 'Facebook inspired, user can post a message and photos',
+      image: '/assets/wall_simple.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS', 'Supabase'],
+      link: 'https://wall-simple.vercel.app/'
     }
   ];
 
@@ -108,11 +113,6 @@ function App() {
       icon: <Globe className="w-8 h-8" />,
       title: 'WordPress Development',
       description: 'Custom themes, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: 'Mobile Development',
-      description: 'Using Android Studio (Java) for building mobile apps with LocalDB as storage for offline application.'
     },
     {
       icon: <Database className="w-8 h-8" />,
@@ -200,7 +200,7 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              Full-Stack Developer
+              Front-End Developer | Software Engineer | License Electronics Engineer
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
@@ -244,7 +244,7 @@ function App() {
                 Building Digital Excellence
               </h3>
               <p className="text-black mb-6 leading-relaxed">
-                I'm a full-stack developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and WordPress development, I help businesses establish a strong online presence.
+                I'm a Front-End developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and WordPress development, I help businesses establish a strong online presence.
               </p>
               <p className="text-black mb-8 leading-relaxed">
                 My approach combines technical excellence with creative problem-solving, ensuring every project delivers both outstanding performance and exceptional user experience.
@@ -257,7 +257,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Dedicated Full-Stack Developer</span>
+                  <span className="text-gray-700">Dedicated Front-End Developer</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
