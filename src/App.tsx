@@ -107,6 +107,13 @@ function App() {
       image: '/assets/tictactoe.png',
       tags: ['React', 'Next.JS', 'TailwindCSS'],
       link: 'https://wall-simple.vercel.app/'
+    },
+    {
+      title: 'Facebook marketplace inspired',
+      description: 'You can add list items',
+      image: '/assets/marketplace.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS', 'supabase'],
+      link: 'https://marketplace-ecru-two.vercel.app/'
     }
   ];
 
