@@ -90,7 +90,7 @@ function App() {
     {
       title: 'Wedding E-Invitation',
       description: 'Personalized Website invitation with RSVP form with customized RSVP form, showcasing a clean and modern design.',
-      image: '/assets/Wedding Inv Image.jpg',
+      image: '/assets/weds.png',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
       link: 'https://wedding-rsvp-flax.vercel.app/'
     },
@@ -99,6 +99,13 @@ function App() {
       description: 'Facebook inspired, user can post a message and photos',
       image: '/assets/wall_simple.png',
       tags: ['React', 'Next.JS', 'TailwindCSS', 'Supabase'],
+      link: 'https://wall-simple.vercel.app/'
+    },
+    {
+      title: 'Tic-Tac-Toe',
+      description: 'Game that never gets old',
+      image: '/assets/tictactoe.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS'],
       link: 'https://wall-simple.vercel.app/'
     }
   ];
@@ -321,7 +328,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 group">
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform duration-200">
@@ -419,7 +426,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <a href='vonfontanilla22@gmail.com' className="text-gray-600">vonfontanilla22@gmail.com</a>
+                      <a href='mailto:vonfontanilla22@gmail.com' className="text-gray-600">vonfontanilla22@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -428,7 +435,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">GitHub</p>
-                      <a href='https://github.com/vFontanilla' className="text-gray-600">https://github.com/vFontanilla</a>
+                      <a href='https://github.com/vFontanilla' className="text-gray-600">vFontanilla</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -437,7 +444,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">LinkedIn</p>
-                      <a href='https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/' className="text-gray-600">https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/</a>
+                      <a href='https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/' className="text-gray-600">Von Cedric Fontanilla</a>
                     </div>
                   </div>
                 </div>
@@ -454,7 +461,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              Dev-Portfolio
+              VCF
             </div>
             <p className="text-gray-400 mb-6">
               Building the future, one line of code at a time.
@@ -466,7 +473,7 @@ function App() {
               <a href="https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="http://localhost:5173/vonfontanilla22@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="mailto:vonfontanilla22@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
