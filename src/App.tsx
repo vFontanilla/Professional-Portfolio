@@ -92,7 +92,7 @@ function App() {
       description: 'Personalized Website invitation with RSVP form with customized RSVP form, showcasing a clean and modern design.',
       image: '/assets/Wedding Inv Image.jpg',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
-      link: 'https://v0-modern-wedding-invitation-rho.vercel.app/'
+      link: 'https://wedding-rsvp-flax.vercel.app/'
     },
     {
       title: 'Facebook style OG',
