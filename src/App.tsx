@@ -285,7 +285,7 @@ function App() {
 
               <div className='flex justify-center'>
                 <a 
-                href="/assets/Von Cedric Fontanilla CV_Resume.pdf"
+                href="/assets/Von Cedric Fontanilla.pdf"
                 download
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
                 >
