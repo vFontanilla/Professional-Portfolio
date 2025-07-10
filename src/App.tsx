@@ -114,6 +114,13 @@ function App() {
       image: '/assets/marketplace.png',
       tags: ['React', 'Next.JS', 'TailwindCSS', 'supabase'],
       link: 'https://marketplace-ecru-two.vercel.app/'
+    },
+    {
+      title: 'Mock Menu Dashboard',
+      description: 'Simple menu dashboard,on progress using mock data, sooner to be integrate it to backend with MongoDB',
+      image: '/assets/Menu Dashboard.png',
+      tags: ['React', 'TailwindCSS', 'Local State Management'],
+      link: 'https://menu-dashboard-one.vercel.app/'
     }
   ];
 
