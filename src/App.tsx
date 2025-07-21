@@ -51,11 +51,11 @@ function App() {
   };
 
   const skills = [
-    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React.js+Vite' },
-    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React+Typescript+Vite' },
-    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '2 Years of experience with WordPress + Elementor' },
-    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2 Years of experience with PHP + WordPress' },
-    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '1 Year of experience with Node.js(Express.js + MongoDB)' }
+    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" />, description: '1+ Year of experience with React.js+Vite' },
+    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '1+ Years of experience with React+Typescript+Vite' },
+    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '1+ Years of experience with WordPress + Elementor' },
+    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2+ Years of experience with PHP' },
+    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '2+ Year of experience with Node.js(Express.js + MongoDB)' }
   ];
 
   const projects = [
@@ -221,7 +221,7 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              Front-End Developer | Software Engineer | License Electronics Engineer
+              Full-Stack Developer | Software Engineer | License Electronics Engineer
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
