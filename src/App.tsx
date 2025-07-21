@@ -133,12 +133,12 @@ function App() {
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'WordPress Development',
-      description: 'Custom themes, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
+      description: 'Custom premium templates, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: 'Backend Development',
-      description: 'Robust server-side solutions with Node.js, PHP, and database creation schema using MySQL and MSSQL.'
+      description: 'Robust server-side solutions with Node.js with express, PHP, and database creation schema using MySQL and MSSQL.'
     }
   ];
 
@@ -221,7 +221,7 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              Full-Stack Developer | Software Engineer | License Electronics Engineer
+              WordPress Page Builder (Elementor) | Full-Stack Developer | Software Engineer | License Electronics Engineer
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
@@ -265,7 +265,7 @@ function App() {
                 Building Digital Excellence
               </h3>
               <p className="text-black mb-6 leading-relaxed">
-                I'm a Front-End developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and WordPress development, I help businesses establish a strong online presence.
+                I'm a versatile developer with a passion for creating modern, functional, and user-centered digital experiences. With proficieint in modern web technologies and WordPress page builder, I help businesses establish a strong online presence.
               </p>
               <p className="text-black mb-8 leading-relaxed">
                 My approach combines technical excellence with creative problem-solving, ensuring every project delivers both outstanding performance and exceptional user experience.
@@ -278,11 +278,11 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Dedicated Front-End Developer</span>
+                  <span className="text-gray-700">Dedicated Full-Stack Developer</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">React & WordPress Proficient</span>
+                  <span className="text-gray-700">React & WordPress Page Builder Proficient</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
