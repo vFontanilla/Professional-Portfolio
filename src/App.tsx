@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
-  Code, 
-  Smartphone, 
+  Code,
   Globe, 
   Database, 
   Mail, 
@@ -52,12 +51,11 @@ function App() {
   };
 
   const skills = [
-    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React.js+Vite' },
-    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '2 Years of experience with React+Typescript+Vite' },
-    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '2 Years of experience with WordPress + Elementor' },
-    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2 Years of experience with PHP + WordPress' },
-    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '1 Year of experience with Node.js(Express.js + MongoDB)' },
-    { name: 'Mobile Dev', level: 50, icon: <Smartphone className="w-6 h-6" />, description: '1 Year of experience with Android Studio (Java)' }
+    { name: 'React.js', level: 50, icon: <Code className="w-6 h-6" />, description: '1+ Year of experience with React.js+Vite' },
+    { name: 'TypeScript', level: 50, icon: <Code className="w-6 h-6" />, description: '1+ Years of experience with React+Typescript+Vite' },
+    { name: 'WordPress', level: 50, icon: <Globe className="w-6 h-6" />, description: '1+ Years of experience with WordPress + Elementor' },
+    { name: 'PHP', level: 50, icon: <Database className="w-6 h-6" />, description: '2+ Years of experience with PHP' },
+    { name: 'Node.js', level: 50, icon: <Zap className="w-6 h-6" />, description: '2+ Year of experience with Node.js(Express.js + MongoDB)' }
   ];
 
   const projects = [
@@ -92,7 +90,7 @@ function App() {
     {
       title: 'Wedding E-Invitation',
       description: 'Personalized Website invitation with RSVP form with customized RSVP form, showcasing a clean and modern design.',
-      image: '/assets/Wedding Inv Image.jpg',
+      image: '/assets/weds.png',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
       link: 'https://v0-modern-wedding-invitation-rho.vercel.app'
     },
@@ -102,6 +100,34 @@ function App() {
       image: '/assets/qrcode.png',
       tags: ['Next.JS', 'TailwindCSS', 'Postgres', 'Render'],
       link: 'https://qr-code-lost-sms-system.vercel.app'
+    },
+    {
+      title: 'Facebook style OG',
+      description: 'Facebook inspired, user can post a message and photos',
+      image: '/assets/wall_simple.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS', 'Supabase'],
+      link: 'https://wall-simple.vercel.app/'
+    },
+    {
+      title: 'Tic-Tac-Toe',
+      description: 'Game that never gets old',
+      image: '/assets/tictactoe.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS'],
+      link: 'https://wall-simple.vercel.app/'
+    },
+    {
+      title: 'Facebook marketplace inspired',
+      description: 'You can add list items',
+      image: '/assets/marketplace.png',
+      tags: ['React', 'Next.JS', 'TailwindCSS', 'supabase'],
+      link: 'https://marketplace-ecru-two.vercel.app/'
+    },
+    {
+      title: 'Mock Menu Dashboard',
+      description: 'Simple menu dashboard,on progress using mock data, sooner to be integrate it to backend with MongoDB',
+      image: '/assets/Menu Dashboard.png',
+      tags: ['React', 'TailwindCSS', 'Local State Management'],
+      link: 'https://menu-dashboard-one.vercel.app/'
     }
   ];
 
@@ -114,17 +140,12 @@ function App() {
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'WordPress Development',
-      description: 'Custom themes, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: 'Mobile Development',
-      description: 'Using Android Studio (Java) for building mobile apps with LocalDB as storage for offline application.'
+      description: 'Custom premium templates, plugins, and Elementor, A complete WordPress solutions for businesses of all sizes.'
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: 'Backend Development',
-      description: 'Robust server-side solutions with Node.js, PHP, and database creation schema using MySQL and MSSQL.'
+      description: 'Robust server-side solutions with Node.js with express, PHP, and database creation schema using MySQL and MSSQL.'
     }
   ];
 
@@ -136,7 +157,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Dev-Portfolio
+                VCF
               </span>
             </div>
             
@@ -207,7 +228,7 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              Full-Stack Developer
+              WordPress Page Builder (Elementor) | Full-Stack Developer | Software Engineer | License Electronics Engineer
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
@@ -251,7 +272,7 @@ function App() {
                 Building Digital Excellence
               </h3>
               <p className="text-black mb-6 leading-relaxed">
-                I'm a full-stack developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and WordPress development, I help businesses establish a strong online presence.
+                I'm a versatile developer with a passion for creating modern, functional, and user-centered digital experiences. With proficieint in modern web technologies and WordPress page builder, I help businesses establish a strong online presence.
               </p>
               <p className="text-black mb-8 leading-relaxed">
                 My approach combines technical excellence with creative problem-solving, ensuring every project delivers both outstanding performance and exceptional user experience.
@@ -268,7 +289,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">React & WordPress Proficient</span>
+                  <span className="text-gray-700">React & WordPress Page Builder Proficient</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
@@ -278,7 +299,7 @@ function App() {
 
               <div className='flex justify-center'>
                 <a 
-                href="/assets/Von Cedric Fontanilla CV_Resume.pdf"
+                href="/assets/Von Cedric Fontanilla.pdf"
                 download
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
                 >
@@ -328,7 +349,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 group">
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform duration-200">
@@ -426,7 +447,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <a href='vonfontanilla22@gmail.com' className="text-gray-600">vonfontanilla22@gmail.com</a>
+                      <a href='mailto:vonfontanilla22@gmail.com' className="text-gray-600">vonfontanilla22@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -435,7 +456,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">GitHub</p>
-                      <a href='https://github.com/vFontanilla' className="text-gray-600">https://github.com/vFontanilla</a>
+                      <a href='https://github.com/vFontanilla' className="text-gray-600">vFontanilla</a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -444,7 +465,7 @@ function App() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">LinkedIn</p>
-                      <a href='https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/' className="text-gray-600">https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/</a>
+                      <a href='https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/' className="text-gray-600">Von Cedric Fontanilla</a>
                     </div>
                   </div>
                 </div>
@@ -461,7 +482,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              Dev-Portfolio
+              VCF
             </div>
             <p className="text-gray-400 mb-6">
               Building the future, one line of code at a time.
@@ -473,7 +494,7 @@ function App() {
               <a href="https://www.linkedin.com/in/von-cedric-fontanilla-9ba47327b/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="http://localhost:5173/vonfontanilla22@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="mailto:vonfontanilla22@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
