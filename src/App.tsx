@@ -66,21 +66,21 @@ function App() {
       description: 'News home page built with React.js and Vite, showcasing a clean and modern design.',
       image: '/assets/News Homepage.jpg',
       tags: ['React', 'TailwindCSS'],
-      link: 'https://news-homepage-eight-ruddy.vercel.app/'
+      link: 'https://news-homepage-eight-ruddy.vercel.app'
     },
     {
       title: 'Weather Dashboard Tracker',
       description: 'Weather dashboard tracker built with React.ts and Vite, displaying real-time weather updates.',
       image: '/assets/Weather Dashboard.jpg',
       tags: ['React', 'TailwindCSS', 'API'],
-      link: 'https://weather-dashboard-app-gamma.vercel.app/'
+      link: 'https://weather-dashboard-app-gamma.vercel.app'
     },
     {
       title: 'Quiz App',
       description: 'Quiz app built with React.js and tailwindcss, showcasing a quiz with multiple choice questions.',
       image: '/assets/Quiz App.jpg',
       tags: ['React', 'TailwindCSS'],
-      link: 'https://quiz-game-app-gamma.vercel.app/'
+      link: 'https://quiz-game-app-gamma.vercel.app'
     },
     {
       title: 'WordPress Theme',
@@ -94,7 +94,14 @@ function App() {
       description: 'Personalized Website invitation with RSVP form with customized RSVP form, showcasing a clean and modern design.',
       image: '/assets/Wedding Inv Image.jpg',
       tags: ['Next.JS', 'TailwindCSS', 'Supabase'],
-      link: 'https://v0-modern-wedding-invitation-rho.vercel.app/'
+      link: 'https://v0-modern-wedding-invitation-rho.vercel.app'
+    },
+    {
+      title: 'QR Code Lost & SMS System',
+      description: 'User can add items with QR image and attached to the item. When item is lost, founder can scan the QR code and send a SMS to the owner of the item.',
+      image: '/assets/qrcode.png',
+      tags: ['Next.JS', 'TailwindCSS', 'Postgres', 'Render'],
+      link: 'https://qr-code-lost-sms-system.vercel.app'
     }
   ];
 
