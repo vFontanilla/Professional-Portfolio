@@ -228,11 +228,11 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              WordPress Page Builder (Elementor) | Full-Stack Developer | Software Engineer | License Electronics Engineer
+              WordPress Page Builder (Elementor) | Full-Stack Developer | Software Engineer | Licensed Electronics Engineer
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
-              Web Developer specializing in WordPress (Elementor, custom plugins) and React + TypeScript. I help agencies build fast, SEO-friendly, and user-focused websites with clean code and organized delivery.
+              Web Developer | WordPress (Elementor, Plugins) & React/TypeScript | I build fast, SEO-friendly sites + RSVP/Event Websites
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
