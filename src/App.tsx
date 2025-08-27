@@ -113,7 +113,7 @@ function App() {
       description: 'Game that never gets old',
       image: '/assets/tictactoe.png',
       tags: ['React', 'Next.JS', 'TailwindCSS'],
-      link: 'https://wall-simple.vercel.app/'
+      link: 'https://tic-tac-toe-game-kappa-sandy.vercel.app/'
     },
     {
       title: 'Facebook marketplace inspired',
@@ -128,6 +128,20 @@ function App() {
       image: '/assets/Menu Dashboard.png',
       tags: ['React', 'TailwindCSS', 'Local State Management'],
       link: 'https://menu-dashboard-one.vercel.app/'
+    },
+    {
+      title: 'Membership Portal',
+      description: 'Membership Portal, for a membership website, with a simple user authentication, and a dashboard for the admin to manage the members.',
+      image: '/assets/qrcode.png',
+      tags: ['React', 'TailwindCSS', 'NextJS', 'MySQL'],
+      link: 'https://membership-portal-tau.vercel.app/'
+    },
+    {
+      title: 'Wedding RSVP (WordPress+Elementor)',
+      description: 'Wedding RSVP (WordPress) with a RSVP form for guests to RSVP to the wedding. Comes with image upload.',
+      image: '/assets/J&D.png',
+      tags: ['React', 'TailwindCSS', 'NextJS', 'MySQL'],
+      link: 'https://membership-portal-tau.vercel.app/'
     }
   ];
 
@@ -293,7 +307,7 @@ function App() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">SEO and GA4/GTM Experienced</span>
+                  <span className="text-gray-700">SEO Basic Configuration</span>
                 </div>
               </div>
 
