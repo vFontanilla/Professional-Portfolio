@@ -135,14 +135,15 @@ function App() {
       image: '/assets/qrcode.png',
       tags: ['React', 'TailwindCSS', 'NextJS', 'MySQL'],
       link: 'https://membership-portal-tau.vercel.app/'
-    },
-    {
-      title: 'Wedding RSVP (WordPress+Elementor)',
-      description: 'Wedding RSVP (WordPress) with a RSVP form for guests to RSVP to the wedding. Comes with image upload.',
-      image: '/assets/J&D.png',
-      tags: ['React', 'TailwindCSS', 'NextJS', 'MySQL'],
-      link: 'https://membership-portal-tau.vercel.app/'
     }
+    // ,
+    // {
+    //   title: 'Wedding RSVP (WordPress+Elementor)',
+    //   description: 'Wedding RSVP (WordPress) with a RSVP form for guests to RSVP to the wedding. Comes with image upload.',
+    //   image: '/assets/J&D.png',
+    //   tags: ['React', 'TailwindCSS', 'NextJS', 'MySQL'],
+    //   link: 'https://membership-portal-tau.vercel.app/'
+    // }
   ];
 
   const services = [
@@ -242,11 +243,11 @@ function App() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white mb-6 max-w-3xl mx-auto">
-              WordPress Page Builder (Elementor) | Full-Stack Developer | Software Engineer | Licensed Electronics Engineer
+              WordPress + Elementor | React/NextJS Developer | Licensed Electronics Engineer | Executive Virtual Assistant
             </p>
             
             <p className="text-lg text-white mb-12 max-w-2xl mx-auto">
-              Web Developer | WordPress (Elementor, Plugins) & React/TypeScript | I build fast, SEO-friendly sites + RSVP/Event Websites
+              Detail-oriented Full-Stack Developer and Virtual Assistant skilled in WordPress Elementor, and website optimization. Experienced in managing emails, files, schedules, and daily operations while simultaneously supporting web development tasks and full website builds. Combines technical expertise with strong organizational skills to help teams stay efficient, productive, and well-supported.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -276,7 +277,7 @@ function App() {
               About Me
             </h2>
             <p className="text-xl text-black max-w-3xl mx-auto">
-              Passionate developer with 2+ years of experience creating innovative web solutions
+              Passionate developer assistant with 2+ years of experience creating innovative web solutions
             </p>
           </div>
 
@@ -313,7 +314,7 @@ function App() {
 
               <div className='flex justify-center'>
                 <a 
-                href="/assets/Von Cedric Fontanilla.pdf"
+                href="/assets/Von Cedric Fontanilla - VA.pdf"
                 download
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
                 >
