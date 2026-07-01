@@ -24,7 +24,6 @@ export default function SearchBar({ onSearch, onGeolocate, loading, onAutocomple
   const debounceRef = useRef<NodeJS.Timeout | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-   // Handle debounce typing
   useEffect(() => {
     if (city.trim()) {
       setTyping(true)
@@ -36,7 +35,11 @@ export default function SearchBar({ onSearch, onGeolocate, loading, onAutocomple
     } else {
       setSuggestions([])
     }
-  }, [city])
+
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current)
+    }
+  }, [city, onAutocomplete, setSuggestions])
 
   // Handle outside click
   useEffect(() => {
@@ -50,7 +53,7 @@ export default function SearchBar({ onSearch, onGeolocate, loading, onAutocomple
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
     }
-  }, [])
+  }, [setSuggestions])
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()

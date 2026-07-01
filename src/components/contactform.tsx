@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import { useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 
@@ -15,8 +16,7 @@ interface FormErrors {
   message?: string;
 }
 
-const ContactForm: React.FC = () => {
-  const form = useRef<HTMLFormElement>(null);
+function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -30,14 +30,12 @@ const ContactForm: React.FC = () => {
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
-    // Name validation
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     } else if (formData.name.trim().length < 2) {
       newErrors.name = 'Name must be at least 2 characters';
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -45,7 +43,6 @@ const ContactForm: React.FC = () => {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    // Message validation
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     } else if (formData.message.trim().length < 10) {
@@ -56,14 +53,13 @@ const ContactForm: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
 
-    // Clear error when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({
         ...prev,
@@ -72,7 +68,7 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!validateForm()) {
@@ -83,15 +79,13 @@ const ContactForm: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration
-      // const serviceId = 'service_8thrhck'; 
-      // const templateId = 'template_hdh34tm'; 
-      // const publicKey = 'xBbS7IP3dLhofoaAB'; 
-
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID!; 
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID!; 
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY!; 
-      console.log('EmailJS configuration:', serviceId, templateId, publicKey);
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('Email service is not configured.');
+      }
 
       const templateParams = {
         from_name: formData.name,
@@ -125,7 +119,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-sm">
+    <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
       {submitStatus === 'success' && (
         <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
           <CheckCircle className="w-5 h-5 text-green-600" />
@@ -146,12 +140,13 @@ const ContactForm: React.FC = () => {
         </div>
       )}
 
-      <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-sm font-medium text-gray-900 mb-2">
+          <label htmlFor="contact-name" className="block text-sm font-medium text-gray-900 mb-2">
             Name *
           </label>
           <input 
+            id="contact-name"
             type="text"
             name="name"
             value={formData.name}
@@ -169,10 +164,11 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-900 mb-2">
+          <label htmlFor="contact-email" className="block text-sm font-medium text-gray-900 mb-2">
             Email *
           </label>
           <input 
+            id="contact-email"
             type="email"
             name="email"
             value={formData.email}
@@ -190,10 +186,11 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-900 mb-2">
+          <label htmlFor="project-type" className="block text-sm font-medium text-gray-900 mb-2">
             Project Type
           </label>
           <select 
+            id="project-type"
             name="projectType"
             value={formData.projectType}
             onChange={handleInputChange}
@@ -202,19 +199,20 @@ const ContactForm: React.FC = () => {
           >
             <option value="Web Development">Web Development</option>
             <option value="WordPress Development">WordPress Development</option>
-            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="Website Optimization">Website Optimization</option>
             <option value="Full-Stack Project">Full-Stack Project</option>
-            <option value="E-commerce">E-commerce</option>
+            <option value="Technical VA Support">Technical VA Support</option>
             <option value="Consultation">Consultation</option>
             <option value="Other">Other</option>
           </select>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-900 mb-2">
+          <label htmlFor="contact-message" className="block text-sm font-medium text-gray-900 mb-2">
             Message *
           </label>
           <textarea 
+            id="contact-message"
             name="message"
             value={formData.message}
             onChange={handleInputChange}
@@ -254,20 +252,8 @@ const ContactForm: React.FC = () => {
         </button>
       </form>
 
-      {/* <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-        <div className="flex items-start gap-3">
-          <Mail className="w-5 h-5 text-blue-600 mt-0.5" />
-          <div>
-            <p className="text-blue-800 font-medium text-sm">Setup Required</p>
-            <p className="text-blue-600 text-sm">
-              To enable email functionality, you'll need to configure EmailJS with your service credentials. 
-              Check the console for setup instructions.
-            </p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
-};
+}
 
 export default ContactForm;
