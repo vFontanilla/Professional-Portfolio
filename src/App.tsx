@@ -15,7 +15,6 @@ import {
   Sparkles,
   Wrench,
   X,
-  Zap,
 } from 'lucide-react';
 import ContactForm from './components/contactform';
 
@@ -29,60 +28,62 @@ const navItems = [
 ];
 
 const trustSignals = [
+  'AI-Augmented Development',
+  'Custom Plugin Development',
   'WordPress + Elementor',
-  'NextJS + TypeScript',
-  'Full-stack projects',
-  'Remote support ready',
+  'Next.js + TypeScript',
+  'Workflow Automation',
+  'Remote Support Ready',
 ];
 
 const highlights = [
-  '2+ years building and supporting web projects',
-  'Licensed Electronics Engineer with technical discipline',
-  'Developer plus virtual assistant support experience',
-  'Comfortable with WordPress, React, Next.js, PHP, and backend workflows',
+  'AI-Augmented Developer delivering production-ready web solutions',
+  'Engineering mindset focused on scalable, reliable software',
+  'Bridging AI, development, automation, and technical operations',
+  'Building with WordPress, Next.js, React, AI, APIs, and modern backend workflows',
 ];
 
 const skillGroups = [
   {
-    title: 'Frontend',
+    title: 'AI-Augmented Development',
     icon: <Code className="h-5 w-5" />,
-    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML', 'CSS', 'ShadCN UI', 'Lucide-icons'],
+    skills: ['AI-assisted software engineering', 'Prompt engineering', 'AI code review', 'AI debugging', 'Rapid prototyping', 'Workflow automation', 'AI documentation'],
   },
   {
-    title: 'WordPress',
+    title: 'Full-Stack Development',
     icon: <Globe className="h-5 w-5" />,
-    skills: ['Elementor', 'WooCommerce', 'CPT/ACF', 'Plugin development', 'Membership sites', 'Performance fixes', 'Custom Code Snippets'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'Node.js', 'Express', 'PHP', 'REST APIs', 'MySQL', 'PostgreSQL', 'Supabase'],
   },
   {
-    title: 'Backend',
+    title: 'WordPress Solutions',
     icon: <Database className="h-5 w-5" />,
-    skills: ['Node.js', 'Express', 'PHP', 'REST APIs', 'MySQL', 'PostgreSQL', 'Supabase'],
+    skills: ['Elementor', 'WooCommerce', 'CPT / ACF', 'Plugin Development', 'Custom Code Snippets', 'Membership Systems', 'Performance Optimization'],
   },
   {
-    title: 'Support',
+    title: 'Engineering & Delivery',
     icon: <BriefcaseBusiness className="h-5 w-5" />,
-    skills: ['Documentation', 'QA checks', 'Email management', 'File organization', 'Client support'],
+    skills: ['PHP', 'MySQL', 'PostgreSQL', 'Supabase', 'QA & Testing','Documentation', 'Troubleshooting', 'Remote Support', 'Technical Support'],
   },
 ];
 
 const services = [
   {
     icon: <Globe className="h-8 w-8" />,
-    title: 'WordPress and Elementor Development',
+    title: 'AI-Augmented Software Development',
     description:
-      'Business websites, landing pages, WooCommerce updates, membership flows, and practical Elementor builds that are easy for clients to maintain.',
+      'Leverage AI-assisted engineering to rapidly build websites, internal tools, and custom applications while maintaining clean architecture, production-ready code, and scalable solutions.',
   },
   {
     icon: <Code className="h-8 w-8" />,
-    title: 'React and Full-Stack Web Apps',
+    title: 'Full-Stack Web Development',
     description:
-      'Responsive applications using React, Next.js, TypeScript, APIs, authentication flows, dashboards, and database-backed features.',
+      'Build responsive applications using Next.js, React, TypeScript, PHP, APIs, databases, and authentication systems, tailored to business workflows and user experience.',
   },
   {
     icon: <Wrench className="h-8 w-8" />,
-    title: 'Optimization and Technical Support',
+    title: 'WordPress Solutions & Automation',
     description:
-      'Bug fixing, page cleanup, SEO basics, performance checks, documentation, QA, and remote operations support for busy teams.',
+      'Develop custom WordPress websites, Elementor builds, WooCommerce stores, plugin enhancements, and workflow automations that reduce manual work and improve business efficiency.',
   },
 ];
 
@@ -167,22 +168,64 @@ const projects: Project[] = [
 
 const experienceItems = [
   {
-    title: 'Web Developer and WordPress Builder',
-    meta: 'Portfolio, client-style, and self-directed projects',
-    description:
-      'Built responsive websites and application prototypes using WordPress, Elementor, React, Next.js, Tailwind CSS, PHP, and database-backed workflows.',
+    title: 'Software Engineer (Android Developer)',
+    company: 'Npax Cebu Inc.',
+    period: 'December 2023 - December 2024',
+    summary:
+      'Maintained and enhanced enterprise Android applications by developing new features, resolving production issues, and supporting AWS-hosted services. Leveraged AI-assisted development to accelerate debugging, code analysis, documentation, and feature implementation while maintaining clean, reliable, and production-ready code.',
+    contributions: [
+      'Maintained and enhanced existing Android applications using Android Studio.',
+      'Designed and implemented new application features and modules based on business requirements.',
+      'Diagnosed and resolved software defects to improve application stability and performance.',
+      'Supported applications integrated with AWS-hosted infrastructure and services.',
+      'Wrote and maintained MS SQL queries for data management and application support.',
+      'Used AI-assisted development to accelerate debugging, code reviews, documentation, and feature delivery while following engineering best practices.',
+    ],
+    technologies: ['Java', 'Android Studio', 'AWS', 'MS SQL', 'Git', 'AI-Assisted Development'],
   },
   {
-    title: 'Executive Virtual Assistant Support',
-    meta: 'Remote operations and technical support',
-    description:
-      'Supported daily operations through email management, documentation, file organization, scheduling, QA checks, and clear client communication.',
+    title: 'WordPress Developer (Independent Contractor)',
+    company: 'Wingman',
+    period: 'January 2025 - May 2025',
+    summary:
+      'Built and customized WordPress websites, Elementor layouts, plugin features, and user-facing workflows with a focus on maintainability, usability, and business needs.',
+    contributions: [
+      'Developed WordPress pages and layouts using Elementor and custom styling.',
+      'Customized plugin behavior and implemented feature improvements using PHP, JavaScript, and CSS.',
+      'Performed bug fixing, content updates, QA checks, and basic SEO configuration.',
+      'Documented changes and coordinated implementation details for clearer handoff and support.',
+    ],
+    technologies: ['WordPress', 'Elementor', 'PHP', 'JavaScript', 'CSS','Plugin Development'],
   },
   {
-    title: 'Licensed Electronics Engineer',
-    meta: 'Technical foundation',
-    description:
-      'Applied engineering discipline, problem solving, and structured troubleshooting to software development and support work.',
+    title: 'Full-Stack Developer (AI-Augmented Engineering)',
+    company: 'Freelance / Independent',
+    period: 'June 2025 - December 2025',
+    summary:
+      'Built responsive web applications and dashboard prototypes using React, Next.js, TypeScript, Tailwind CSS, API integrations, and database-backed workflows.',
+    contributions: [
+      'Created responsive interfaces for dashboards, RSVP flows, quotation systems, and portfolio projects.',
+      'Integrated frontend experiences with Supabase, Prisma, APIs, and authentication-oriented workflows.',
+      'Structured reusable project data, status indicators, and project cards for clearer portfolio storytelling.',
+      'Improved code quality through TypeScript checks, linting, accessibility updates, and build verification.',
+      'Applied problem-solving discipline from engineering and support work to web development projects.',
+    ],
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Supabase', 'Vercel'],
+  },
+  {
+    title: 'Full-Stack Developer (AI-Augmented Engineering)',
+    company: 'StarLegends Adventures Inc.',
+    period: 'December 2025 - Present',
+    summary:
+      'Design, develop, and maintain business-focused web applications, WordPress platforms, and AI-powered development workflows that improve customer experience, automate operations, and accelerate software delivery.',
+    contributions: [
+      'Built and maintained WordPress websites, WooCommerce stores, and Elementor-powered landing pages for travel, membership, and business platforms.',
+      'Developed custom WordPress plugins, checkout enhancements, membership features, and reusable PHP components to support evolving business requirements.',
+      'Engineered AI-assisted development workflows to accelerate feature delivery, debugging, documentation, testing, and code reviews while maintaining production-quality software.',
+      'Optimized website performance, accessibility, SEO, and user experience through technical improvements and frontend enhancements.',
+      'Applied problem-solving discipline from engineering and support work to web development projects.',
+    ],
+    technologies: ['WordPress', 'WooCommerce', 'PHP', 'Elementor', 'WordPress REST APIs', 'AI-Assisted Development', 'Bootstrap'],
   },
 ];
 
@@ -302,17 +345,15 @@ function App() {
             <div className="flex flex-col justify-center">
               <div className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-blue-100">
                 <Sparkles className="h-4 w-4" />
-                WordPress, NextJS, and remote technical support
+                AI-Augmented Full-Stack Developer
               </div>
 
               <h1 className="max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
-                I build business-focused websites and full-stack web experiences.
+                I help businesses build, automate, and grow with AI-powered web development.
               </h1>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-                Hi, I am Von Cedric Fontanilla, a passioanate Full-Stack Web Developer specializing in WordPress,
-                Elementor, React, and Next.js. I also bring virtual assistant experience,
-                so I can support both the build and the operations around it.
+                From WordPress websites to modern Next.js applications, I use AI as a development accelerator, not a replacement to deliver scalable, maintainable, and business-focused software. I specialize in automation, integrations, and creating digital experiences that solve real problems.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -355,8 +396,7 @@ function App() {
                 <div className="mt-5 space-y-3 text-white">
                   <p className="text-xl font-semibold">Von Cedric Fontanilla</p>
                   <p className="text-sm leading-6 text-slate-200">
-                    Full-Stack Web Developer, WordPress builder, Licensed Electronics Engineer,
-                    and Virtual Assistant.
+                    AI-Augmented Developer, WordPress Plugin Developer, Licensed Electronics Engineer, and Virtual Assistant Experience.
                   </p>
                 </div>
               </div>
@@ -370,16 +410,13 @@ function App() {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">About</p>
                 <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">
-                  A developer who can build, troubleshoot, document, and support the work.
+                  An AI-Augmented Developer who builds, automates, and delivers with confidence.
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-slate-600">
-                  I help create practical websites and web applications with a focus on clean interfaces,
-                  reliable workflows, and business outcomes. My mix of development and virtual assistant
-                  experience makes me comfortable with both technical implementation and team support.
+                  I build modern websites and full-stack web applications using AI-augmented development to accelerate delivery without compromising code quality. By combining engineering expertise with AI-assisted workflows, I transform ideas into scalable, maintainable solutions faster.                 
                 </p>
                 <p className="mt-4 text-lg leading-8 text-slate-600">
-                  I work across WordPress, Elementor, React, Next.js, PHP, APIs, and database-backed
-                  features, then keep the handoff clear through documentation, QA, and communication.
+                  My experience spans WordPress, Elementor, Next.js, React, PHP, APIs, databases, and workflow automation. Beyond development, I contribute through troubleshooting, documentation, QA, and technical support, ensuring projects are reliable from planning to production.
                 </p>
               </div>
 
@@ -397,7 +434,7 @@ function App() {
               <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Skills</p>
-                  <h3 className="mt-3 text-2xl font-bold text-slate-950">Practical toolset by workflow</h3>
+                  <h3 className="mt-3 text-2xl font-bold text-slate-950">AI-Augmented Development Workflow</h3>
                 </div>
               </div>
 
@@ -425,13 +462,15 @@ function App() {
         <section id="services" className="bg-slate-50 py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Services</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">AI-powered software delivery.</p>
               <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">
-                Development and support services for websites that need to work.
+                AI-Augmented Development Services
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                I focus on practical builds: websites development, plugin development, dashboards, extending plugin features, support workflows, and cleanup work
-                that help clients move faster.
+                I help businesses build, automate, and optimize digital products using AI-assisted engineering and modern web technologies.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">
+                From business websites to custom web applications, I combine AI-augmented development with proven engineering practices to deliver faster, cleaner, and more maintainable solutions.
               </p>
             </div>
 
@@ -455,10 +494,10 @@ function App() {
               <div className="max-w-3xl">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Featured Projects</p>
                 <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">
-                  Project proof with clearer business context.
+                  AI-Augmented Solutions Built for Real Business Needs
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-slate-600">
-                  Each project now highlights the problem, my role, and the practical value delivered.
+                  Each project demonstrates how I combine AI-assisted development with modern engineering to deliver scalable, production-ready software.
                 </p>
               </div>
               <ShieldCheck className="hidden h-12 w-12 text-blue-600 md:block" />
@@ -529,22 +568,49 @@ function App() {
         <section id="experience" className="bg-slate-950 py-20 text-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">Experience</p>
-              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">A blend of web development and dependable support.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">PROFESSIONAL EXPERIENCE</p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Building software, solving problems, and delivering business value.</h2>
               <p className="mt-4 text-lg leading-8 text-slate-300">
-                The strongest version of this portfolio is not only about code. It also shows communication,
-                organization, troubleshooting, and delivery discipline.
+                From software engineering and WordPress development to technical operations and AI-augmented workflows, my experience spans building applications, supporting production systems, and helping teams deliver reliable software.
               </p>
             </div>
 
-            <div className="grid gap-5 lg:grid-cols-3">
+            <div className="space-y-8">
               {experienceItems.map((item) => (
-                <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                  <Zap className="mb-5 h-6 w-6 text-blue-300" />
-                  <h3 className="text-xl font-bold">{item.title}</h3>
-                  <p className="mt-2 text-sm font-medium text-blue-200">{item.meta}</p>
-                  <p className="mt-4 leading-7 text-slate-300">{item.description}</p>
-                </div>
+                <article key={`${item.title}-${item.company}`} className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-2xl sm:p-8">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold text-white">{item.title}</h3>
+                    <p className="text-lg font-semibold text-slate-100">{item.company}</p>
+                    <p className="font-semibold text-blue-200">{item.period}</p>
+                  </div>
+
+                  <p className="mt-8 max-w-5xl text-base leading-8 text-slate-200">
+                    {item.summary}
+                  </p>
+
+                  <div className="mt-8">
+                    <h4 className="font-bold text-white">Key Contributions</h4>
+                    <ul className="mt-5 list-disc space-y-3 pl-6 text-base leading-7 text-slate-200">
+                      {item.contributions.map((contribution) => (
+                        <li key={contribution}>{contribution}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-8">
+                    <h4 className="font-bold text-white">Technologies</h4>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {item.technologies.map((technology) => (
+                        <span
+                          key={technology}
+                          className="rounded-md bg-white/15 px-3 py-1.5 font-mono text-sm font-semibold text-white ring-1 ring-white/10"
+                        >
+                          {technology}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
               ))}
             </div>
           </div>
@@ -554,18 +620,17 @@ function App() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Contact</p>
-              <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">Let us build something useful.</h2>
+              <h2 className="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">Let's build something impactful together.</h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-                Reach out for WordPress, React, full-stack, optimization, or technical support work.
+                I'm currently open to remote opportunities in AI-Augmented Software Engineering, Full-Stack Development, and WordPress Engineering. If you're looking for a developer who combines modern engineering practices with AI-assisted workflows to deliver scalable, production-ready solutions, let's connect.
               </p>
             </div>
 
             <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[0.9fr_1.1fr]">
               <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-950">Contact details</h3>
+                <h3 className="text-2xl font-bold text-slate-950">Get in Touch</h3>
                 <p className="mt-4 leading-7 text-slate-600">
-                  I am open to web development work, WordPress support, frontend builds, and remote technical
-                  assistant roles where clear execution matters.
+                  I'm passionate about building software that solves real business problems. Whether you're hiring for a full-time role, freelance engagement, or technical collaboration, I'd be happy to discuss how I can contribute to your team.
                 </p>
 
                 <div className="mt-8 space-y-5">

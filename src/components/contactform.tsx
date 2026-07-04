@@ -88,11 +88,16 @@ function ContactForm() {
       }
 
       const templateParams = {
+        name: formData.name,
         from_name: formData.name,
         from_email: formData.email,
         project_type: formData.projectType,
         message: formData.message,
         to_name: 'Von Cedric Fontanilla',
+        time: new Date().toLocaleString('en-US', {
+          dateStyle: 'medium',
+          timeStyle: 'short',
+        }),
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -187,7 +192,7 @@ function ContactForm() {
 
         <div>
           <label htmlFor="project-type" className="block text-sm font-medium text-gray-900 mb-2">
-            Project Type
+            Opportunity Type
           </label>
           <select 
             id="project-type"
@@ -197,12 +202,12 @@ function ContactForm() {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
             disabled={isSubmitting}
           >
-            <option value="Web Development">Web Development</option>
-            <option value="WordPress Development">WordPress Development</option>
-            <option value="Website Optimization">Website Optimization</option>
-            <option value="Full-Stack Project">Full-Stack Project</option>
-            <option value="Technical VA Support">Technical VA Support</option>
-            <option value="Consultation">Consultation</option>
+            <option value="Web Development">Software Engineering Position</option>
+            <option value="WordPress Development">AI-Augmented Development</option>
+            <option value="Website Optimization">Full-Stack Development</option>
+            <option value="Full-Stack Project">WordPress Development</option>
+            <option value="Technical VA Support">Technical Consultation</option>
+            <option value="Consultation">Collaboration</option>
             <option value="Other">Other</option>
           </select>
         </div>
@@ -219,7 +224,7 @@ function ContactForm() {
             rows={4}
             maxLength={500}
             className={getInputClassName('message')}
-            placeholder="Tell me about your project, timeline, and any specific requirements..."
+            placeholder="Tell me about the opportunity, project, or role you're hiring for..."
             disabled={isSubmitting}
           />
           {errors.message && (
@@ -246,7 +251,7 @@ function ContactForm() {
           ) : (
             <>
               <Send className="w-5 h-5" />
-              Send Message
+              Let's Connect
             </>
           )}
         </button>
