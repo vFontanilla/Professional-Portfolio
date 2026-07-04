@@ -202,12 +202,12 @@ function ContactForm() {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
             disabled={isSubmitting}
           >
-            <option value="Web Development">Software Engineering Position</option>
-            <option value="WordPress Development">AI-Augmented Development</option>
-            <option value="Website Optimization">Full-Stack Development</option>
-            <option value="Full-Stack Project">WordPress Development</option>
-            <option value="Technical VA Support">Technical Consultation</option>
-            <option value="Consultation">Collaboration</option>
+            <option value="Software Engineering Position">Software Engineering Position</option>
+            <option value="AI-Augmented Development">AI-Augmented Development</option>
+            <option value="Full-Stack Development">Full-Stack Development</option>
+            <option value="WordPress Development">WordPress Development</option>
+            <option value="Technical Consultation">Technical Consultation</option>
+            <option value="Collaboration">Collaboration</option>
             <option value="Other">Other</option>
           </select>
         </div>
