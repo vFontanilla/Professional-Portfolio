@@ -215,7 +215,7 @@ const experienceItems = [
   {
     title: 'Full-Stack Developer (AI-Augmented Engineering)',
     company: 'StarLegends Adventures Inc.',
-    period: 'December 2025 - Present',
+    period: 'December 2025 - July 2026',
     summary:
       'Design, develop, and maintain business-focused web applications, WordPress platforms, and AI-powered development workflows that improve customer experience, automate operations, and accelerate software delivery.',
     contributions: [
